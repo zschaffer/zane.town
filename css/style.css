@@ -1,0 +1,38 @@
+body {
+    max-width: 80vw;
+    margin: 2vh auto;
+    font-family: 'Athelas';
+}
+
+article {
+    border: #333 1px solid;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+sup {
+    line-height: 0;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+table {
+    border: #333 1px solid;
+}
+
+tr {
+    border-collapse: collapse;
+}
+
+
+td a {
+    text-decoration: none;
+    color: #333;
+}
+
+td:hover a{
+    background-color: #555;
+    color: #FFF;
+}
