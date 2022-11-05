@@ -36,3 +36,12 @@ td:hover a{
     background-color: #555;
     color: #FFF;
 }
+
+button {
+    background: white;
+    border: #333 1px solid;
+}
+
+button:hover {
+    background: #CCC;
+}
