@@ -1,7 +1,13 @@
 body {
+    background: #EEE;
+    color: #333;
     max-width: 80vw;
     margin: 2vh auto;
     font-family: 'Athelas';
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 article {
