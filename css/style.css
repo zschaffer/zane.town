@@ -32,7 +32,6 @@ tr {
     border-collapse: collapse;
 }
 
-
 td a {
     text-decoration: none;
     color: #333;
@@ -50,4 +49,45 @@ button {
 
 button:hover {
     background: #CCC;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #333;
+        color: #EEE;
+    }
+
+    article {
+        border: #EEE 1px solid;
+    }
+
+    table {
+        border: #EEE 1px solid;
+    }
+
+    a {
+        color: #CCC;
+    }
+
+    a:hover {
+        color: #EEE;
+    }
+
+    td a {
+        color: #EEE;
+    }
+
+    td:hover a{
+        background-color: #555;
+        color: #EEE;
+    }
+
+    button {
+        background: black;
+        border: #EEE 1px solid;
+    }
+
+    button:hover {
+        background: #444;
+    }
 }
