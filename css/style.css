@@ -2,6 +2,7 @@ body {
     background: #EEE;
     color: #333;
     max-width: 80vw;
+    width: 80vw;
     margin: 2vh auto;
     font-family: 'Athelas';
     -webkit-filter: grayscale(100%);
@@ -10,10 +11,42 @@ body {
     filter: grayscale(100%);
 }
 
-article {
-    border: #333 1px solid;
-    margin: 1rem 0;
-    padding: 1rem;
+#header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+.album_box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.album_box img {
+  object-fit:cover;
+  width: 20vw;
+  height: 20vw;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.album a {
+  text-decoration: none;
+}
+.album img:hover {
+  filter: invert(1) ;
 }
 
 sup {
@@ -22,14 +55,6 @@ sup {
 
 p {
     margin: 0 0 1rem 0;
-}
-
-table {
-    border: #333 1px solid;
-}
-
-tr {
-    border-collapse: collapse;
 }
 
 td a {
@@ -42,27 +67,11 @@ td:hover a{
     color: #FFF;
 }
 
-button {
-    background: white;
-    border: #333 1px solid;
-}
-
-button:hover {
-    background: #CCC;
-}
 
 @media (prefers-color-scheme: dark) {
     body {
         background: #333;
         color: #EEE;
-    }
-
-    article {
-        border: #EEE 1px solid;
-    }
-
-    table {
-        border: #EEE 1px solid;
     }
 
     a {
@@ -80,14 +89,5 @@ button:hover {
     td:hover a{
         background-color: #555;
         color: #EEE;
-    }
-
-    button {
-        background: black;
-        border: #EEE 1px solid;
-    }
-
-    button:hover {
-        background: #444;
     }
 }
