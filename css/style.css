@@ -13,9 +13,11 @@ body {
 
 #header {
   margin-bottom: 1rem;
+  border-bottom: 1px #333 solid;
 }
 
 footer {
+  padding-top: 1rem;
   margin-top: 1rem;
 }
 
@@ -45,7 +47,8 @@ footer {
 .album a {
   text-decoration: none;
 }
-.album img:hover {
+
+.cover:hover {
   filter: invert(1) ;
 }
 
@@ -86,6 +89,16 @@ td:hover a{
         color: #EEE;
     }
 
+
+    #header {
+      margin-bottom: 1rem;
+      border-bottom: 1px #EEE solid;
+    }
+
+    footer {
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
     td:hover a{
         background-color: #555;
         color: #EEE;
