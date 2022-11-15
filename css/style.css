@@ -9,6 +9,7 @@ body {
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
+    image-rendering: pixelated;
 }
 
 #header {
