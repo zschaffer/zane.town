@@ -8,9 +8,10 @@ body {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-    filter: grayscale(100%);
+    filter:  grayscale(100%);
     image-rendering: pixelated;
 }
+
 
 #header {
   margin-bottom: 1rem;
@@ -32,7 +33,7 @@ footer {
   flex-direction: row;
 }
 
-.album_box img {
+.cover {
   object-fit:cover;
   width: 20vw;
   height: 20vw;
@@ -50,7 +51,7 @@ footer {
 }
 
 .cover:hover {
-  filter: invert(1) ;
+  filter: opacity(50%);
 }
 
 sup {
