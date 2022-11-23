@@ -1,31 +1,25 @@
 body {
-    background: #EEE;
-    color: #333;
-    font-size: 1.1rem;
-    max-width: 80vw;
-    width: 80vw;
-    margin: 2vh auto;
-    font-family: 'Athenia';
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter:  grayscale(100%);
-    image-rendering: pixelated;
+  background: #cacaca;
+  color: #353535;
+  font-size: 0.8rem;
+  max-width: 50vw;
+  width: 50vw;
+  margin: 5vh auto;
+  font-family: monospace;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter:  grayscale(100%);
+  image-rendering: pixelated;
 }
-
 
 #header {
   margin-bottom: 1rem;
-  border-bottom: 1px #333 solid;
 }
 
 footer {
   padding-top: 1rem;
   margin-top: 1rem;
-}
-
-#header a {
-  text-decoration: none;
 }
 
 .album_box {
@@ -47,63 +41,36 @@ footer {
   justify-content: center;
 }
 
-.album a {
-  text-decoration: none;
-}
-
 .cover:hover {
   filter: opacity(50%);
 }
 
 sup {
-    line-height: 0;
+  line-height: 0;
 }
 
 p {
-    margin: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
-td a {
-    text-decoration: none;
-    color: #333;
+a {
+  color: #545454;
 }
-
-td:hover a{
-    background-color: #555;
-    color: #FFF;
+a:hover {
+  color: #434343;
 }
-
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background: #333;
-        color: #EEE;
-    }
+  body {
+    background: #353535;
+    color: #cacaca;
+  }
 
-    a {
-        color: #CCC;
-    }
+  a {
+    color: #bababa;
+  }
+  a:hover {
+    color: #cacaca;
+  }
 
-    a:hover {
-        color: #EEE;
-    }
-
-    td a {
-        color: #EEE;
-    }
-
-
-    #header {
-      margin-bottom: 1rem;
-      border-bottom: 1px #EEE solid;
-    }
-
-    footer {
-      padding-top: 1rem;
-      margin-top: 1rem;
-    }
-    td:hover a{
-        background-color: #555;
-        color: #EEE;
-    }
 }
