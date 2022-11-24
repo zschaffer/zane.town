@@ -23,7 +23,7 @@ body {
     color: var(--textcolor);
     position: relative;
     line-height: 1.4;   
-    font-size: 1rem;
+    font-size: 0.8rem;
     max-width: 64em;
     margin: 0 auto;
 }
