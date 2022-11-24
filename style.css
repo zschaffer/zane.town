@@ -1,20 +1,16 @@
 * { margin: 0; padding: 0; box-sizing: border-box;
-  --textcolor: #333;
-  --bgcolor: #EEE;
-  --highlight: #333;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter:  grayscale(100%);
+  --textcolor: #353535;
+  --bgcolor: #EEEEEE;
+  --highlight: #286486;
   image-rendering: pixelated;
   font-family: 'Geneva', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   * {
-    --textcolor: #EEE;
-    --bgcolor: #333;
-    --highlight: #EEE;
+    --textcolor: #BBBBBB;
+    --bgcolor: #191919;
+    --highlight: #6099C0;
   }
 }
 
@@ -183,7 +179,7 @@ article time {
 .grid {
   display: grid;
   grid-gap: 0;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 150px = minimum image size */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 150px = minimum image size */
   grid-auto-flow: dense;
   padding: 2em 0;
 }
