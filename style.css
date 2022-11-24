@@ -1,48 +1,20 @@
-@font-face {
-  font-family: "Iosevka Etoile";
-  src: local("Iosevka Etoile"),
-    url("./fonts/iosevka-etoile-regular.woff2") format("woff2")
-}
-
-@font-face {
-  font-family: "Iosevka Etoile";
-  src: local("Iosevka Etoile Bold"),
-  url("./fonts/iosevka-etoile-bold.woff2") format("woff2");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Iosevka Etoile";
-  src: local("Iosevka Etoile Italic"),
-  url("./fonts/iosevka-etoile-italic.woff2") format("woff2");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Iosevka Etoile";
-  src: local("Iosevka Etoile Italic Bold"),
-  url("./fonts/iosevka-etoile-bolditalic.woff2") format("woff2");
-  font-style: italic;
-  font-weight: bold;
-}
-
 * { margin: 0; padding: 0; box-sizing: border-box;
   --textcolor: #333;
   --bgcolor: #EEE;
-  --highlight: #233;
+  --highlight: #333;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   filter:  grayscale(100%);
   image-rendering: pixelated;
-  font-family: "Iosevka Etoile";
+  font-family: 'Geneva', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   * {
     --textcolor: #EEE;
     --bgcolor: #333;
-    --highlight: #FEE;
+    --highlight: #EEE;
   }
 }
 
@@ -55,7 +27,7 @@ body {
     color: var(--textcolor);
     position: relative;
     line-height: 1.4;   
-    font-size: 18px;
+    font-size: 1rem;
     max-width: 64em;
     margin: 0 auto;
 }
@@ -110,9 +82,20 @@ a:hover {
   border-bottom: 1px solid;
 }
 
+section * a:before {
+  content: "{";
+}
+section * a:after {
+  content: "}";
+}
+
 section h1 {
   font-size: 1em;
   margin: 0 0 1em 0;
+}
+
+header * a {
+  color: var(--textcolor);
 }
 
 h2, h3, h4 {
@@ -173,36 +156,12 @@ small {
   max-width: 10vw;
 }
 
-
-a[href*="//"]:after { 
-  font-weight: 300;
-  font-size: .85em;
-  content: "\2197"; /* top right arrow: â†— */
-  color: var(--textcolor);
-  opacity: .25;
-}
-
 a[href*="//"]:hover:after {
   color: var(--highlight);
   opacity: 1;
 }
 
 /* File links */
-
-a:before { 
-  font-size: .7em;
-  margin-right: .4em;
-}
-
-a[href$=".pdf"]:before { content: "PDF"; }
-a[href$=".txt"]:before { content: "TXT"; }
-a[href$=".mp3"]:before { content: "MP3"; }
-a[href$=".zip"]:before { content: "ZIP"; }
-a[href$=".rar"]:before { content: "RAR"; }
-a[href$=".jpeg"]:before,
-a[href$=".jpg"]:before,
-a[href$=".gif"]:before,
-a[href$=".png"]:before { content: "IMG"; }
 
 
 article + article {
