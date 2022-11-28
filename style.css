@@ -2,7 +2,6 @@
   --textcolor: #353535;
   --bgcolor: #EEEEEE;
   --highlight: #286486;
-  image-rendering: pixelated;
   font-family: 'Geneva', sans-serif;
 }
 
@@ -112,7 +111,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  fill: currentColor;
 }
 
 label {
