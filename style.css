@@ -2,7 +2,7 @@
   --textcolor: #353535;
   --bgcolor: #EEEEEE;
   --highlight: #286486;
-  font-family: 'Geneva', sans-serif;
+  font-family: monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,8 +22,8 @@ body {
     color: var(--textcolor);
     position: relative;
     line-height: 1.4;   
-    font-size: 0.8rem;
-    max-width: 64em;
+    font-size: 1rem;
+    max-width: 70ch; 
     margin: 0 auto;
 }
 
@@ -52,12 +52,12 @@ header {
   display: flex;
   position: absolute;
   width: 100%;
-  max-width: 64em;
   z-index: 2;
 }
 
 header h1 {
   font-size: 1em;
+  font-weight: normal;
   flex: 1;
   white-space:  nowrap;
   padding: 0 5vw .5em 0;
@@ -99,7 +99,7 @@ h2, h3, h4 {
   margin: 1.6em 0 .6em 0;
 }
 p, ul, ol, article {
-  max-width: 60ch;
+  max-width: 70ch;
   margin-bottom: .6em;
 }
 
