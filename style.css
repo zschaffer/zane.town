@@ -108,9 +108,9 @@ ul {
 }
 
 img {
-  display: block;
+  display: inline;
   max-width: 100%;
-  height: auto;
+  height: 2rem;
 }
 
 label {
