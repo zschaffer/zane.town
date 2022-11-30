@@ -1,20 +1,23 @@
 * { margin: 0; padding: 0; box-sizing: border-box;
-  --textcolor: #353535;
-  --bgcolor: #EEEEEE;
-  --highlight: #286486;
-  font-family: monospace;
+  --textcolor: #555555;
+  --bgcolor: #E2E2E2;
+  --highlight: #0084A3;
+  font-family: Optima, Geneva, sans-serif, system-ui;
 }
 
 @media (prefers-color-scheme: dark) {
   * {
-    --textcolor: #BBBBBB;
-    --bgcolor: #191919;
-    --highlight: #6099C0;
+    --textcolor: #DDDDDD;
+    --bgcolor: #4B4B4B;
+    --highlight: #97BDDE;
+  }
+  header h1 a img {
+    filter: invert();
   }
 }
 
 @media only screen and (max-width: 680px) {
-  body { font-size: 16px; }
+  body { max-width: none !important; }
 }
 
 body {
@@ -23,13 +26,16 @@ body {
     position: relative;
     line-height: 1.4;   
     font-size: 1rem;
-    max-width: 70ch; 
+    max-width: 70vw; 
     margin: 0 auto;
 }
 
 /* ----- sections ----- */
 section {
-  padding: calc(3em + 2vw) 5vw 8vw 5vw;
+
+  padding: 6rem 2rem 1rem 2rem;
+  outline: 1px solid;
+  outline-offset: -1rem;
   display: none;
   position: absolute;
   top: 0;
@@ -48,11 +54,14 @@ section#home {
 
 /* ----- header ----- */
 header {
-  padding: 2vw 5vw 0 5vw;
+  outline: 1px solid;
+  outline-offset: -1rem;
+  padding: 2rem 2rem 2rem 2rem;
   display: flex;
   position: absolute;
   width: 100%;
   z-index: 2;
+  align-items: center;
 }
 
 header h1 {
@@ -60,11 +69,11 @@ header h1 {
   font-weight: normal;
   flex: 1;
   white-space:  nowrap;
-  padding: 0 5vw .5em 0;
+  height: 2rem;
 }
 
 nav a:not(:last-of-type) {
-  margin-right: 1vw;
+  margin-right: 0.5rem;
 }
 
 /* ----- general ----- */
@@ -77,12 +86,6 @@ a:hover {
   border-bottom: 1px solid;
 }
 
-section * a:before {
-  content: "{";
-}
-section * a:after {
-  content: "}";
-}
 
 section h1 {
   font-size: 1em;
@@ -93,10 +96,14 @@ header * a {
   color: var(--textcolor);
 }
 
+#home ul {
+  list-style: inside '• ';
+}
+
 h2, h3, h4 {
   font-size: 1em;
   font-weight: 600;
-  margin: 1.6em 0 .6em 0;
+  margin-bottom: .6em;
 }
 p, ul, ol, article {
   max-width: 70ch;
@@ -106,6 +113,17 @@ p, ul, ol, article {
 ul {
   list-style-type: none;
 }
+
+#logo {
+  height: 2rem;
+  max-width: 100%;
+  display: inline;
+}
+
+h1 a:hover {
+  border:none;
+}
+
 
 img {
   display: inline;
