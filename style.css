@@ -83,10 +83,10 @@ a:hover {
   border-bottom: 1px solid;
 }
 
-section * a:before {
+p a:before {
   content: "{";
 }
-section * a:after {
+p a:after {
   content: "}";
 }
 
