@@ -2,13 +2,14 @@
   font-family: "Iosevka Etoile Light";
   src: local("Iosevka Etoile Light"),
   url("iosevka_etoile_light.woff2") format("woff2");
+  font-display: fallback;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box;
   --textcolor: #555555;
   --bgcolor: #E2E2E2;
   --highlight: #0084A3;
-  font-family: "Iosevka Etoile Light";
+  font-family: "Iosevka Etoile Light", serif;
 }
 
 @media (prefers-color-scheme: dark) {
