@@ -17,7 +17,7 @@
 }
 
 @media only screen and (max-width: 680px) {
-  body { font-size: 16px; }
+  body { max-width: none !important; }
 }
 
 body {
@@ -26,12 +26,13 @@ body {
     position: relative;
     line-height: 1.4;   
     font-size: 1rem;
-    max-width: 70ch; 
+    max-width: 70vw; 
     margin: 0 auto;
 }
 
 /* ----- sections ----- */
 section {
+
   padding: 6rem 2rem 1rem 2rem;
   outline: 1px solid;
   outline-offset: -1rem;
@@ -105,6 +106,7 @@ h2, h3, h4 {
   margin-bottom: .6em;
 }
 p, ul, ol, article {
+  max-width: 70ch;
   margin-bottom: .6em;
 }
 
