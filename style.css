@@ -1,15 +1,8 @@
-@font-face {
-  font-family: "Iosevka Etoile Light";
-  src: local("Iosevka Etoile Light"),
-  url("iosevka_etoile_light.woff2") format("woff2");
-  font-display: fallback;
-}
-
 * { margin: 0; padding: 0; box-sizing: border-box;
   --textcolor: #555555;
   --bgcolor: #E2E2E2;
   --highlight: #0084A3;
-  font-family: "Iosevka Etoile Light", serif;
+  font-family: Optima, Geneva, sans-serif, system-ui;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -129,10 +122,6 @@ h1 a:hover {
   border:none;
 }
 
-#logo:hover {
-  outline: 1px solid;
-  outline-offset: 4px;
-}
 
 img {
   display: inline;
