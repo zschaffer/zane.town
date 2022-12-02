@@ -140,7 +140,6 @@ ul {
   height: 1.5rem;
   object-fit: none;
   padding: 0 1rem 0 0;
-  width: 100%;
   image-rendering: pixelated;
   display: inline;
 }
