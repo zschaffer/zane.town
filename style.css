@@ -1,8 +1,30 @@
+@font-face {
+    font-family: "Mondwest";
+    src: url("./PPMondwest-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mondwest";
+    src: url("./PPMondwest-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "NeueBit";
+    src: url("./PPNeueBit-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NeueBit";
+    src: url("./PPNeueBit-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box;
   --textcolor: #555555;
   --bgcolor: #E2E2E2;
   --highlight: #0084A3;
-  font-family: monospace;
+  font-family: "NeueBit";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +47,7 @@ body {
     color: var(--textcolor);
     position: relative;
     line-height: 1.4;   
-    font-size: 1rem;
+    font-size: 1.25rem;
     max-width: 60vw; 
     margin: 0 auto;
 }
@@ -69,7 +91,7 @@ header h1 {
   font-weight: normal;
   flex: 1;
   white-space:  nowrap;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 nav a:not(:last-of-type) {
@@ -101,9 +123,10 @@ header * a {
 }
 
 h2, h3, h4 {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   margin-bottom: .6em;
+  font-family: "Mondwest";
 }
 p, ul, ol, article {
   max-width: 70ch;
@@ -115,8 +138,11 @@ ul {
 }
 
 #logo {
-  height: 2rem;
-  max-width: 100%;
+  height: 1.5rem;
+  object-fit: cover;
+  padding: 0 1rem 0 0;
+  width: 100%;
+  image-rendering: pixelated;
   display: inline;
 }
 
