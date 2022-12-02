@@ -21,8 +21,8 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box;
-  --textcolor: #555555;
-  --bgcolor: #E2E2E2;
+  --textcolor: #353535;
+  --bgcolor: #EEEEEE;
   --highlight: #0084A3;
   font-family: "NeueBit";
 }
