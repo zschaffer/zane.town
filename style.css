@@ -2,7 +2,7 @@
   --textcolor: #555555;
   --bgcolor: #E2E2E2;
   --highlight: #0084A3;
-  font-family: Optima, Geneva, sans-serif, system-ui;
+  font-family: monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +26,7 @@ body {
     position: relative;
     line-height: 1.4;   
     font-size: 1rem;
-    max-width: 70vw; 
+    max-width: 60vw; 
     margin: 0 auto;
 }
 
@@ -34,8 +34,8 @@ body {
 section {
 
   padding: 6rem 2rem 1rem 2rem;
-  outline: 1px solid;
-  outline-offset: -1rem;
+  /* outline: 1px solid; */
+  /* outline-offset: -1rem; */
   display: none;
   position: absolute;
   top: 0;
@@ -54,8 +54,8 @@ section#home {
 
 /* ----- header ----- */
 header {
-  outline: 1px solid;
-  outline-offset: -1rem;
+  /* outline: 1px solid;
+  outline-offset: -1rem; */
   padding: 2rem 2rem 2rem 2rem;
   display: flex;
   position: absolute;
@@ -194,10 +194,10 @@ article time {
 
 .grid {
   display: grid;
-  grid-gap: 0;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 150px = minimum image size */
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* 150px = minimum image size */
   grid-auto-flow: dense;
-  padding: 2em 0;
+  padding: 0 0;
 }
 
 .grid a {
