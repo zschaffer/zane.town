@@ -39,7 +39,7 @@
 
 body {
     /* background: var(--bgcolor); */
-    background: var(--textcolor);
+    background-image: url("img/bg.png");
     color: var(--textcolor);
     position: relative;
     line-height: 1.4;   
@@ -226,7 +226,7 @@ article time {
 
 /* For a square ratio */
 .grid a {
-    width:50%;
+    width:25%;
 }
 
 .grid img {
@@ -234,5 +234,4 @@ article time {
   object-fit: none;
   width:100%;
   height:100%;
-  max-width:400px;
 }
