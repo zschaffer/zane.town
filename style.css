@@ -10,28 +10,23 @@
 }
 
 @font-face {
-    font-family: "NeueBit";
-    src: url("./PPNeueBit-Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "NeueBit";
-    src: url("./PPNeueBit-Bold.woff2") format("woff2");
-    font-weight: bold;
+    font-family: "Cozette";
+    src: url("./CozetteVector.otf");
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box;
   --textcolor: #353535;
   --bgcolor: #EEEEEE;
-  --highlight: #0084A3;
-  font-family: "NeueBit";
+  --highlight: #0084a3;
+  font-family: "Cozette";
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-color-scheme: dark) {
   * {
-    --textcolor: #DDDDDD;
-    --bgcolor: #4B4B4B;
-    --highlight: #97BDDE;
+    --textcolor: #FFF;
+    --bgcolor: #000;
+    --highlight: #5c89bb;
   }
   header h1 a img {
     filter: invert();
@@ -43,11 +38,12 @@
 }
 
 body {
-    background: var(--bgcolor);
+    /* background: var(--bgcolor); */
+    background: var(--textcolor);
     color: var(--textcolor);
     position: relative;
     line-height: 1.4;   
-    font-size: 24px;
+    font-size: 16px;
     max-width: 60vw; 
     margin: 0 auto;
 }
@@ -122,7 +118,7 @@ header * a {
 }
 
 h2, h3, h4 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: .6em;
   font-family: "Mondwest";
@@ -142,6 +138,7 @@ ul {
   padding: 0 1rem 0 0;
   image-rendering: pixelated;
   display: inline;
+  object-position: 0% 20%;
 }
 
 h1 a:hover {
