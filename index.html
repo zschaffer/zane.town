@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="me" href="https://tilde.zone/@zane" />
 <link href="style.css" rel="stylesheet">
-<link rel="icon" href="icon.png" type="image/png" > 
+<link rel="icon" href="icon.png" type="image/png">
 <header>
     <h1>
         <a href="#home">
@@ -23,6 +23,7 @@
 </header>
 <section style="display: flex; flex-direction: column;" id="home">
     <h2>Zane Schaffer</h2>
+    <p id="playing_p">Now Playing: <a href="" id="playing_a"></a></p>
     <p>Former musician, future programmer, presently here.</p>
     <p>Never been a natural at writing blog posts or documenting my interests - It's something I wish to get better
         at. I
@@ -46,15 +47,15 @@
 </section>
 <section id="audio">
     <h2>Audio Experiments</h2>
-    <p>It's been a while since I've released music - my released songs can be found at:
-        <br>
-        <br>
+    <p>It's been a while since I've released music - my released songs can be found at:</p>
+    <p>
         <a href="https://open.spotify.com/artist/1stp6XCHbjsyVmOYGyYBuz">Spotify</a> & <a
             href="https://zaneschaffer.bandcamp.com">Bandcamp</a>
         <br>
         <a href="https://music.apple.com/us/artist/zane-schaffer/1325257694">Apple Music</a> & <a
             href="https://soundcloud.com/zaneschaffer">Soundcloud</a>
     </p>
+    <p> See what I've been listening to recently at my <a href="https://www.last.fm/user/zane-zane-zane">last.fm</a></p>
 </section>
 <section id="radio">
     <h2>Radio Streaming</h2>
@@ -91,3 +92,15 @@
     <p></p>
 
 </section>
+<script>
+    fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=zane-zane-zane&api_key=3db8896601306a311f6ede96df6001a7&limit=1&format=json").then((response) => response.json()).then((data) => {
+    if (data.recenttracks.track[0]["@attr"].nowplaying) {
+        playing_a = document.getElementById("playing_a");
+        playing_p = document.getElementById("playing_p");
+        playing_a.style.display = "inline"
+        playing_p.style.display = "block"
+        playing_a.href=data.recenttracks.track[0].url
+        playing_a.innerText = `[♪ ${data.recenttracks.track[0].name}]`
+    }
+});
+</script>

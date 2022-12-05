@@ -15,9 +15,9 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box;
-  --textcolor: #353535;
-  --bgcolor: #EEEEEE;
-  --highlight: #0084a3;
+  --textcolor: #000;
+  --bgcolor: #FFF;
+  --highlight: #896788;
   font-family: "Cozette";
   -webkit-font-smoothing: antialiased;
 }
@@ -26,7 +26,7 @@
   * {
     --textcolor: #FFF;
     --bgcolor: #000;
-    --highlight: #5c89bb;
+    --highlight: #A5A6C5;
   }
   header h1 a img {
     filter: invert();
@@ -46,6 +46,10 @@ body {
     font-size: 16px;
     max-width: 60vw; 
     margin: 0 auto;
+}
+
+#playing_a, #playing_p {
+    display: none;
 }
 
 /* ----- sections ----- */
